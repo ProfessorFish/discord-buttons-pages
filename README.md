@@ -65,7 +65,7 @@ Here is some example code for using the package:
             .addComponent(button3)
             page2.push(page2Row)
             
-            m.edit("we", {components: page1})
+            m.edit("Buttons Page Test", {components: page1})
             pages = [page1, page2]
       disbutpages.pages(client, m, pages, 100000, disbut, "red")
       }
