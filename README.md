@@ -7,7 +7,6 @@ To install the package, use the following command in the console/terminal/shell.
 
 Here is some example code for using the package:
 
-`
       var pages = [];
       
       var page1 = [];
@@ -44,4 +43,4 @@ Here is some example code for using the package:
     page2.push(page2Row)
     m.edit("we", {components: page1})
     pages = [page1Row, page2Row]
-      disbutpages.pages(client, m, pages, 10000, disbut, "red")`
+      disbutpages.pages(client, m, pages, 10000, disbut, "red")
