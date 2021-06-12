@@ -9,8 +9,11 @@ Here is some example code for using the package:
 
 `
       var pages = [];
+      
       var page1 = [];
+      
       var page2 = [];
+      
       let button = new disbut.MessageButton()
     .setLabel("I like")
     .setStyle("blurple")
