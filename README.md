@@ -53,24 +53,25 @@ Here is some example code for using the package:
     
     disbutpages.pages(client, m, pages, 10000, disbut, "red")
 
-#Funtions
+**Functions
 
 There is one function in this package.
 
-#disbutpages.pages(client, message, pages, timeout, disbut, style)
-Client:
+**disbutpages.pages(client, message, pages, timeout, disbut, style)
+
+**Client:**
 Client is your discord client
 
-Message:
+**Message:**
 This is the message that you sent and want to add buttons to.
 
-Pages:
+**Pages:**
 This is an array of disbut.MessageActionRow()
 
-Timeout:
+**Timeout:**
 This is the amount of time after the message is sent (in milliseconds) to stop updating the pages.
 
-Disbut:
+**Disbut:**
 This is the disbut instance that you have.
 `const Discord = require("discord.js")
 const client = new Discord.Client()
@@ -78,6 +79,6 @@ const disbut = require("discord-buttons")
 disbut(client)`
 You would then use the defined disbut.
 
-Style:
+**Style:**
 This is the colour of the page moving buttons.
 Can be one of red, green, blurple or grey
