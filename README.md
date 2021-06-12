@@ -74,13 +74,14 @@ This is the amount of time after the message is sent (in milliseconds) to stop u
 **Disbut:**
 This is the disbut instance that you have.
 
-`const Discord = require("discord.js")
+      const Discord = require("discord.js")
 
-const client = new Discord.Client()
+      const client = new Discord.Client()
 
-const disbut = require("discord-buttons")
+      const disbut = require("discord-buttons")
 
-disbut(client)`
+      disbut(client)
+
 You would then use the defined disbut.
 
 **Style:**
