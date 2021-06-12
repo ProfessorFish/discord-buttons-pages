@@ -7,7 +7,8 @@ To install the package, use the following command in the console/terminal/shell.
 
 Here is some example code for using the package:
 
-`     var pages = [];
+`     
+var pages = [];
       var page1 = [];
       var page2 = [];
       let button = new disbut.MessageButton()
