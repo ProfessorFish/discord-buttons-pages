@@ -20,16 +20,17 @@ exports.pages = async function(client, message, pages, timeout, disbut, style){
     var pageMovingButtons = new disbut.MessageActionRow()
     .addComponent(pageMovingButtons2)
     .addComponent(pageMovingButtons1)
+    for(var i = 0;i<pages.length;i++){
+        pages[i].push(pageMovingButtons);
+    }
     var currentPage = 0;
-    var array = pages[currentPage];
-    array.push(pageMovingButtons);
-    message.edit(message.content, {components: array});
+    message.edit(message.content, {components: pages[currentPage]});
     client.on("clickButton", async b=>{
         console.log("wee")
         if(Date.now() - timeForStart >= timeout)return;
-        if(b.message.id == message.id){
+        if(b.message.id == message.id && b.message.author.id == message.author.id){
         if(b.id == "back_button"){
-            if(currentPage - 1 > 0){
+            if(currentPage - 1 < 0){
                 currentPage = pages.length - 1
             } else{
                 currentPage -= 1;
@@ -43,13 +44,9 @@ exports.pages = async function(client, message, pages, timeout, disbut, style){
             console.log("woo")
         }
         if(b.id == "back_button" || b.id == "forward_button"){
-            var array = pages[currentPage];
-            array.push(pageMovingButtons);
-            message.edit(message.content, {components: array});
+            message.edit(message.content, {components: pages[currentPage]});
             b.defer(true);
         }
-    } else{
-        b.defer(true);
     }
     })
 }
