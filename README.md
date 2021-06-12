@@ -66,7 +66,7 @@ Client is your discord client
 This is the message that you sent and want to add buttons to.
 
 **Pages:**
-This is an array of disbut.MessageActionRow()
+This is an array of arrays of disbut.MessageActionRow()
 
 **Timeout:**
 This is the amount of time after the message is sent (in milliseconds) to stop updating the pages.
