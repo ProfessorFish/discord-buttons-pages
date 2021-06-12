@@ -1,16 +1,21 @@
 {
-  "name": "Discord-buttons-pages",
-  "version": "1.0.0",
-  "description": "",
+  "name": "discord-buttons-pages",
+  "version": "1.0.23",
+  "description": "pages for the discord-buttons package",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "discord-buttons-pages"
+  ],
+  "author": "professorfish",
   "license": "ISC",
   "dependencies": {
     "discord-buttons": "^3.2.1",
     "discord.js": "^12.5.3"
-  }
+  },
+  "git": {
+    "url": "https://github.com/ProfessorFish/discord-buttons-pages"
+  } 
 }
