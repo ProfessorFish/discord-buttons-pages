@@ -1,5 +1,7 @@
 # discord-buttons-pages
-pages for the discord-buttons package
+Button pages for the discord-buttons package.
+
+This package allows you to have multiple pages of buttons, and to be able to cycle through them using auto-generated buttons.  
 
 To install the package, use the following command in the console/terminal/shell.
 
@@ -50,3 +52,32 @@ Here is some example code for using the package:
     pages = [page1Row, page2Row]
     
     disbutpages.pages(client, m, pages, 10000, disbut, "red")
+
+#Funtions
+
+There is one function in this package.
+
+#disbutpages.pages(client, message, pages, timeout, disbut, style)
+Client:
+Client is your discord client
+
+Message:
+This is the message that you sent and want to add buttons to.
+
+Pages:
+This is an array of disbut.MessageActionRow()
+
+Timeout:
+This is the amount of time after the message is sent (in milliseconds) to stop updating the pages.
+
+Disbut:
+This is the disbut instance that you have.
+`const Discord = require("discord.js")
+const client = new Discord.Client()
+const disbut = require("discord-buttons")
+disbut(client)`
+You would then use the defined disbut.
+
+Style:
+This is the colour of the page moving buttons.
+Can be one of red, green, blurple or grey
