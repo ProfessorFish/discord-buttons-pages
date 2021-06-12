@@ -53,11 +53,11 @@ Here is some example code for using the package:
     
     disbutpages.pages(client, m, pages, 10000, disbut, "red")
 
-**Functions
+**Functions**
 
 There is one function in this package.
 
-**disbutpages.pages(client, message, pages, timeout, disbut, style)
+**disbutpages.pages(client, message, pages, timeout, disbut, style)**
 
 **Client:**
 Client is your discord client
