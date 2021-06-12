@@ -108,3 +108,9 @@ You would then use the defined disbut.
 **Style:**
 This is the colour of the page moving buttons.
 Can be one of red, green, blurple or grey
+
+# Support
+
+Join the discord for support and for other packages/discord bots:
+
+https://discord.gg/u9gFdnu
