@@ -26,7 +26,7 @@ Here is some example code for using the package:
       
       if(message.content == "test"){
       
-            var m = await message.channel.send("testing button pages wee")
+            var m = await message.channel.send("Testing button pages")
             
             var pages = [];
             var page1 = [];
@@ -39,10 +39,11 @@ Here is some example code for using the package:
             .setID("like_button")
       
             button1 = new disbut.MessageButton()
-            .setLabel("am poo")
+            .setLabel("yes")
             .setStyle("blurple")
             .setEmoji("🍕")
-            .setID("poo_button")
+            .setID("yes_button")
+
             const page1Row = new disbut.MessageActionRow()
             .addComponent(button)
             .addComponent(button1)
@@ -58,7 +59,7 @@ Here is some example code for using the package:
             .setLabel("wooooo")
             .setStyle("blurple")
             .setEmoji("🍕")
-            .setID("wee_button")
+            .setID("woo_button")
             
             const page2Row = new disbut.MessageActionRow()
             .addComponent(button2)
