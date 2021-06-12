@@ -14,10 +14,10 @@ Here is some example code for using the package:
       var page2 = [];
       
       let button = new disbut.MessageButton()
-    .setLabel("I like")
-    .setStyle("blurple")
-    .setEmoji("🍕")
-    .setID("like_button")
+      .setLabel("I like")
+      .setStyle("blurple")
+      .setEmoji("🍕")
+      .setID("like_button")
     
     button1 = new disbut.MessageButton()
     .setLabel("I dislike")
